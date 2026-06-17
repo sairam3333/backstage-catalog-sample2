@@ -9,7 +9,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: whitefield-global-school
+  owner: whitefield-global-schoole
   system: edutive-school-management
 
   dependsOn:
