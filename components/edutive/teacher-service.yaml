@@ -13,3 +13,5 @@ spec:
 
   dependsOn:
     - resource:default/mongodb
+  produceApis:
+    -api:default/edutive-teacher-api

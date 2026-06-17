@@ -12,6 +12,7 @@ spec:
     - ./components/edutive/email-service.yaml
     - ./components/edutive/student-service.yaml
     - ./components/edutive/teacher-service.yaml
+    - ./components/edutive/reportcard-service.yaml
 
   # apis
     - ./apis/edutive/assessment-api.yaml
