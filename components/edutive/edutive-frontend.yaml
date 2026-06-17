@@ -16,3 +16,11 @@ spec:
     - component:default/teacher-service
     - component:default/assessment-service
     - component:default/email-service
+
+  consumesApis:
+    - api:default/student-api
+    - api:default/teacher-api
+    - api:default/assessment-api
+    - api:default/report-card-api
+    - api:default/email-api
+  
