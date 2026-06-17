@@ -1,0 +1,9 @@
+site_name: Edutive School Management
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Deployment: deployment.md
+
+plugins:
+  - techdocs-core

@@ -5,6 +5,8 @@ metadata:
   description: Student Management Service
   annotations:
     github.com/project-slug: your-org/student-service
+    backstage.io/techdocs-ref: "dir:../../docs/edutive"
+
 spec:
   type: service
   lifecycle: production
@@ -14,5 +16,5 @@ spec:
   dependsOn:
     - resource:default/mongodb
 
-  produceApis:
-    -api:default/edutive-student-api
+  providesApis:
+    - edutive-student-api
