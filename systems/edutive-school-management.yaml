@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: edutive-school-management
+  description: School Management Platform
+spec:
+  owner: whitefield-global-school

@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: edutive-frontend
+  description: Angular frontend application
+  annotations:
+    github.com/project-slug: your-org/edutive-frontend
+spec:
+  type: website
+  lifecycle: production
+  owner: whitefield-global-school
+  system: edutive-school-management
+
+  dependsOn:
+    - component:default/student-service
+    - component:default/teacher-service
+    - component:default/assessment-service
+    - component:default/email-service

@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: report-card-service
+  description: Report Card Generation Service
+  annotations:
+    github.com/project-slug: your-org/report-card-service
+spec:
+  type: service
+  lifecycle: production
+  owner: whitefield-global-school
+  system: edutive-school-management
+
+  dependsOn:
+    - resource:default/mongodb
+    - resource:default/kafka

@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: edutive-assessment-api
+  description: REST API for assessment management
+spec:
+  type: openapi
+  lifecycle: production
+  owner: whitefield-global-school
+  system: edutive-school-management
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Assessment API
+      version: 1.0.0
+    servers:
+      - url: https://api.edutive.com/assessment
+        description: Production
+    paths:
+      /assessments:
+        get:
+          summary: Get all assessments
+          responses:
+            '200':
+              description: Successful response
+
+      /assessments/{id}:
+        get:
+          summary: Get assessment by ID
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Successful response

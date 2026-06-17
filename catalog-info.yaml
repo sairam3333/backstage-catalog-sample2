@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: root-catalog
+spec:
+  targets:
+  # groups
+    - ./groups/whitefield-global-school.yaml
+  # components
+    - ./components/assessment-service.yaml
+    - ./components/edutive-frontend.yaml
+    - ./components/email-service.yaml
+    - ./components/student-service.yaml
+    - ./components/teacher-service.yaml
+
+  # apis
+    - ./apis/assessment-api.yaml
+    - ./apis/student-api.yaml
+    - /apis/teacher-api.yaml
+
+  # resources
+
+    - ./resources/kafka.yaml
+    - ./resources/mongodb.yaml
+    - ./resources/postgres.yaml
+  
+  # systems
+
+    - ./systems/edutive-school-management.yaml
+  
+  #users
+
+    - ./users/sairam.yaml
+    - ./users/uday.yaml
+    
+    
+   

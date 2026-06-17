@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: edutive-teacher-api
+  description: REST API for teacher management
+spec:
+  type: openapi
+  lifecycle: production
+  owner: whitefield-global-school
+  system: edutive-school-management
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Teacher API
+      version: 1.0.0
+    servers:
+      - url: https://api.edutive.com/teacher
+        description: Production
+    paths:
+      /teachers:
+        get:
+          summary: Get all teachers
+          responses:
+            '200':
+              description: Successful response
+
+      /teachers/{id}:
+        get:
+          summary: Get teacher by ID
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Successful response

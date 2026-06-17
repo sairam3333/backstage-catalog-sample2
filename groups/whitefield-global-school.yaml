@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: whitefield-global-school
+  description: Whitefield Global School Engineering Team
+spec:
+  type: team
+  profile:
+    displayName: Whitefield Global School
+  children: []

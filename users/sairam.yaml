@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sairam
+spec:
+  profile:
+    displayName: Sairam R
+    email: beindiansai@gmail.com
+    picture: https://github.com/sairam3333.png
+  memberOf:
+    - whitefield-global-school

@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: uday
+spec:
+  profile:
+    displayName: Uday R
+    email: uday123@gmail.com
+    picture: https://github.com/sairam3333.png
+  memberOf:
+    - whitefield-global-school

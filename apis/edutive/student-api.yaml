@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: edutive-student-api
+  description: REST API for student management
+spec:
+  type: openapi
+  lifecycle: production
+  owner: whitefield-global-school
+  system: edutive-school-management
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Student API
+      version: 1.0.0
+    servers:
+      - url: https://api.edutive.com/student
+        description: Production
+    paths:
+      /students:
+        get:
+          summary: Get all students
+          responses:
+            '200':
+              description: Successful response
+
+      /students/{id}:
+        get:
+          summary: Get student by ID
+          parameters:
+            - name: id
+              in: path
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Successful response

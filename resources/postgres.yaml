@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: postgres
+  description: Postgres Database
+spec:
+  type: Database
+  owner: whitefield-global-school
+  system: edutive-school-management
