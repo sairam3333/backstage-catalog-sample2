@@ -7,16 +7,16 @@ spec:
   # groups
     - ./groups/whitefield-global-school.yaml
   # components
-    - ./components/assessment-service.yaml
-    - ./components/edutive-frontend.yaml
-    - ./components/email-service.yaml
-    - ./components/student-service.yaml
-    - ./components/teacher-service.yaml
+    - ./components/edutive/assessment-service.yaml
+    - ./components/edutive/edutive-frontend.yaml
+    - ./components/edutive/email-service.yaml
+    - ./components/edutive/student-service.yaml
+    - ./components/edutive/teacher-service.yaml
 
   # apis
-    - ./apis/assessment-api.yaml
-    - ./apis/student-api.yaml
-    - /apis/teacher-api.yaml
+    - ./apis/edutive/assessment-api.yaml
+    - ./apis/edutive/student-api.yaml
+    - /apis/edutive/teacher-api.yaml
 
   # resources
 
