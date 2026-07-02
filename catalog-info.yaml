@@ -24,6 +24,8 @@ spec:
     - ./resources/kafka.yaml
     - ./resources/mongodb.yaml
     - ./resources/postgres.yaml
+    - ./resources/assessment-events.yaml
+    - ./resources/student-notification.yaml
   
   # systems
 

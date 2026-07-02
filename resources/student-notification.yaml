@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: student-notifications
+  description: Outbound notification stream for student alerts and milestones.
+spec:
+  type: topic
+  owner: sairam
+  system: edutive-school-management
+  partOf: resource:kafka
