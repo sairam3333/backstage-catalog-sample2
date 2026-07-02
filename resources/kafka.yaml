@@ -7,3 +7,6 @@ spec:
   type: messaging
   owner: whitefield-global-school
   system: edutive-school-management
+  dependsOn:
+    - resource:default/student-notifications
+    - resource:default/assessment-events
